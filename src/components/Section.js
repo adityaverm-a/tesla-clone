@@ -25,10 +25,8 @@ const Section = ({ title, description, leftButton, rightButton, backgroundImg, f
                         }
                     </ButtonGroup>
                 </Fade>
-                
                 { first &&
                     <DownArrow src='/images/down-arrow.svg' />
-
                 }
             </Buttons>
         </Wrap>
@@ -106,6 +104,5 @@ const RightButton = styled(LeftButton)`
 const DownArrow = styled.img`
     height: 40px;
     animation: animateDown infinite 1.5s;
-    display: flex;
-    justify-content: center;
+    padding-left: 250px;
 `
